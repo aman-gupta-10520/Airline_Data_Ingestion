@@ -38,6 +38,7 @@ Run the above crawler and check the catalog table created for the S3 input file 
 # Redshift
 
 Now create the dimenstion and fact tables in redshift using the commands redshift_create_table_commands.txt
+Fact table (airlines.daily_flights_fact ) will be loaded by our job but the dimenstion table (airlines.airports_dim) we will load manually using the copy command present in above file.
 
 Create JDBC connection for Glue crawler to get the data catalog tables for fact and dimenstion tables present in Redshift:
 
