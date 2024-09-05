@@ -65,7 +65,7 @@ Once the tables are created in Redshift we can create the crawlers and run them 
 
 ![image](https://github.com/user-attachments/assets/31821c88-8074-491d-9eb2-66d367ed9d4b)
 
-attached python file:- airline_data_ingestion.py
+attached python file:- glue_job.py (Glue script for above visual ETL )
 
 This job is used to update the daily raw file data to redshift fact table which is daily_flights_fact by getting the meta data present in dimestion table (airports_dim).
 In the code we are getting the data from redshift for dimenstion table (airports_dim) and daily raw file data from s3.
